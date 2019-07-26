@@ -1,5 +1,5 @@
 <?php
-namespace Bitrix\TestModule;
+namespace TestModule;
 
 use Bitrix\Main,
     Bitrix\Main\Localization\Loc;

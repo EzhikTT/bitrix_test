@@ -3,13 +3,13 @@
 require_once($_SERVER["DOCUMENT_ROOT"] . "/bitrix/modules/main/include/prolog_admin_before.php"); // первый общий пролог
 require_once($_SERVER["DOCUMENT_ROOT"] . "/local/modules/test.module/include.php"); // инициализация модуля
 
-use \Bitrix\Test\TestTable;
+use TestModule\TestTable;
 
 // подключим языковой файл
 IncludeModuleLangFile(__FILE__);
 
 // здесь будет вся серверная обработка и подготовка данных
-$data = \Bitrix\TestModule\TestTable::getList([
+$data = TestTable::getList([
     'select' => '*'
 ])->fetchAll();
 

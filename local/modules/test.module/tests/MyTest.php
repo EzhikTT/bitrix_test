@@ -1,7 +1,7 @@
 <?
 
 use PHPUnit_Framework_TestCase,
-    \Bitrix\TestModule\TestTable;
+    TestModule\TestTable;
 
 class TestCase extends PHPUnit_Framework_TestCase
 {
